@@ -1,5 +1,5 @@
-import React from "react";
-import { Switch } from "../switch/switch";
+import React from 'react';
+import { Switch } from '../switch/switch';
 
 export class CompoundToggle extends React.Component {
   state = { on: false };
