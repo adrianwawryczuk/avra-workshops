@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { CompoundToggle } from "./compound-toggle";
+import { CompoundToggle } from "./compound-toggle/compound-component";
 
 function App() {
   return (
