@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import { CompoundToggle } from './compound-component.js';
 
 it('CompoundComponent', () => {
-    const rendered = render(
+    const rendered = shallow(
         <CompoundToggle>
             <CompoundToggle.On>On</CompoundToggle.On>
             <CompoundToggle.Off>On</CompoundToggle.Off>
@@ -11,11 +11,10 @@ it('CompoundComponent', () => {
         </CompoundToggle>,
     );
 
-    debugger
+    const On = rendered.at(0).at(0).props();
+    on.simulate('click')
+
     expect(rendered.find('CompoundToggle.On').props())
         .toEqual({});
 });
 
-function render(children) {
-    return shallow(<CompoundToggle>{children}</CompoundToggle>);
-}

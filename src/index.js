@@ -1,24 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { CompoundToggle } from "./compound-toggle/compound-component";
+import { CompoundToggle } from "./compound-toggle";
 
 function App() {
   return (
     <div className="App">
-      <CompoundToggle>
-        <CompoundToggle.Off>"Wylaczony"</CompoundToggle.Off>
-        <CompoundToggle.Switch />
-        <CompoundToggle.On>"Właczony"</CompoundToggle.On>
-        <Log />
-      </CompoundToggle>
+        <CompoundToggle />
     </div>
   );
-}
-
-function Log({ on }) {
-  console.log(on);
-
-  return null;
 }
 
 const rootElement = document.getElementById("root");

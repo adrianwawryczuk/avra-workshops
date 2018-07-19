@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch } from '../switch/switch';
 
-export class CompoundToggle extends React.Component {
+export class CompoundToggleImpl extends React.Component {
   state = { on: false };
 
   toggle = () => this.setState(({ on }) => ({ on: !on }));
