@@ -5,7 +5,7 @@ import { CompoundToggle } from "./compound-toggle";
 function App() {
   return (
     <div className="App">
-        <CompoundToggle />
+      <CompoundToggle />
     </div>
   );
 }
